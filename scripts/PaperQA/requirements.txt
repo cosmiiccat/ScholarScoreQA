@@ -1,0 +1,3 @@
+paperqa
+openai
+asyncio
