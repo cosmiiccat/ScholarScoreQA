@@ -1,5 +1,7 @@
 # ScholarScoreQA
-# K-Span ScholarQA Official implementation of the paper *“K-Span Select and Multi-Dimensional Judging for Reliable Scholarly Question Answering”* (IEEE JCDL 2025).   This repository implements K-Span Select for span-level retrieval and ScholarScore for reliable, style-aware scholarly question answering.
+# K-Span ScholarQA Official implementation of the paper *“K-Span Select and Multi-Dimensional Judging for Reliable Scholarly Question Answering”* (IEEE JCDL 2025).
+
+This repository implements K-Span Select for span-level retrieval and ScholarScore for reliable, style-aware scholarly question answering.
 
 Scholarly question answering (QA) over long docu- ments is challenging because relevant evidence is scattered, and language models struggle with irrelevant context. We present a retrieval-augmented framework that integrates span-level re- trieval, prompting strategies, and multi-dimensional evaluation to improve reliability in scholarly QA. 
 
