@@ -18,8 +18,7 @@ class InstructorEmbeddingModel:
     def get_embeddings(self, texts: List[str]) -> torch.Tensor:
         """
         INSTRUCTOR requires input in format:
-        ["instruction", "text"]
-        For simplicity we use a generic instruction.
+        ["question", "text"]
         """
         instruct_pairs = [["Represent the text for retrieval:", text] for text in texts]
 
