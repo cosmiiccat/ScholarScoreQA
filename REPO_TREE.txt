@@ -1,4 +1,6 @@
 .
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
 ├── DemoVideo
 │   └── QNADemo.mov
 ├── Dockerfile
@@ -170,4 +172,4 @@
         ├── tone_transformer.py
         └── tones.txt
 
-28 directories, 143 files
+28 directories, 145 files
