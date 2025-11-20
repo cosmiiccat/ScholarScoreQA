@@ -39,6 +39,7 @@
 │       └── vite.config.js
 ├── assets
 │   ├── hero.png
+│   ├── hero2.png
 │   ├── herosection.png
 │   └── logo.png
 ├── plots
@@ -176,4 +177,4 @@
         ├── tone_transformer.py
         └── tones.txt
 
-29 directories, 148 files
+29 directories, 149 files
