@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="assets/hero.png" width="600" alt="ScholarScoreQA Logo">
+  <img src="assets/logo.png" style="width: 100%; max-width: 1000px;" />
 </p>
 
 # 📘 ScholarScoreQA: Reliable Scholarly Question Answering
