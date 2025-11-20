@@ -2,7 +2,7 @@ name: Generate Repository Tree
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
 
 jobs:
