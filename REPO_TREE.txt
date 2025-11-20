@@ -1,0 +1,173 @@
+.
+├── DemoVideo
+│   └── QNADemo.mov
+├── Dockerfile
+├── LICENSE
+├── README.md
+├── REPO_TREE.txt
+├── _scholar_qna
+│   ├── bin
+│   │   ├── Activate.ps1
+│   │   ├── activate
+│   │   ├── activate.csh
+│   │   ├── activate.fish
+│   │   ├── pip
+│   │   ├── pip3
+│   │   ├── pip3.11
+│   │   ├── python -> python3.11
+│   │   ├── python3 -> python3.11
+│   │   └── python3.11 -> /Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11
+│   └── pyvenv.cfg
+├── application-ui
+│   ├── package-lock.json
+│   └── scientificQnaUI
+│       ├── README.md
+│       ├── eslint.config.js
+│       ├── index.html
+│       ├── package-lock.json
+│       ├── package.json
+│       ├── public
+│       │   └── vite.svg
+│       ├── src
+│       │   ├── App.css
+│       │   ├── App.jsx
+│       │   ├── assets
+│       │   ├── index.css
+│       │   └── main.jsx
+│       └── vite.config.js
+├── plots
+│   ├── HumanEvalResp.png
+│   ├── KSpanDiagram.png
+│   ├── KSpanEmbed.png
+│   ├── LJHumanEval.png
+│   ├── MethodDiagram.png
+│   ├── QasperResult.png
+│   └── README.md
+├── prompts
+│   └── README.md
+├── sample.env
+└── scripts
+    ├── BM25
+    │   ├── __Init__.py
+    │   ├── cross_reranker.py
+    │   ├── reducer.py
+    │   ├── retriever.py
+    │   ├── span_splitter.py
+    │   └── utils.py
+    ├── Embed
+    │   ├── Instructor.py
+    │   ├── Jina.py
+    │   └── Scibert.py
+    ├── FID
+    │   ├── readme.MD
+    │   ├── requirements.txt
+    │   └── scripts
+    │       ├── chunker.py
+    │       ├── config.py
+    │       ├── encoder.py
+    │       ├── inference.py
+    │       ├── model.py
+    │       └── utils.py
+    ├── GPTModels
+    │   ├── readme.MD
+    │   ├── requirements.txt
+    │   └── scripts
+    │       ├── config.py
+    │       ├── inference.py
+    │       ├── model.py
+    │       ├── pipeline.py
+    │       ├── prompt_utils.py
+    │       ├── runner.py
+    │       └── text_utils.py
+    ├── GraphRAG
+    │   ├── readme.MD
+    │   ├── requirements.txt
+    │   └── scripts
+    │       ├── config.py
+    │       ├── entity_extractor.py
+    │       ├── gpt_extractor.py
+    │       ├── graph_builder.py
+    │       ├── graph_rag.py
+    │       ├── merge_utils.py
+    │       ├── openai_client.py
+    │       ├── relation_builder.py
+    │       ├── relation_extractor.py
+    │       ├── relation_utils.py
+    │       ├── runner.py
+    │       ├── spacy_extractor.py
+    │       ├── text_utils.py
+    │       └── utils.py
+    ├── KSpan
+    │   ├── README.md
+    │   ├── __init__.py
+    │   ├── config.py
+    │   ├── embedder.py
+    │   ├── metrics.py
+    │   ├── runner.py
+    │   ├── selector.py
+    │   ├── typing.py
+    │   ├── utils.py
+    │   └── windower.py
+    ├── LED
+    │   ├── readme.MD
+    │   ├── requirements.txt
+    │   └── scripts
+    │       ├── config.py
+    │       ├── inference.py
+    │       ├── model.py
+    │       └── utils.py
+    ├── LanguageJudge
+    │   ├── __init__.py
+    │   ├── aggregator.py
+    │   ├── api_client.py
+    │   ├── config.py
+    │   ├── correctness.py
+    │   ├── fluency.py
+    │   ├── format.py
+    │   ├── groundness.py
+    │   ├── language_judge.py
+    │   ├── llmjudge.txt
+    │   ├── primitive.py
+    │   ├── prompt_builder.py
+    │   ├── qnaPairSelector.py
+    │   └── scholarscore.py
+    ├── Metrics
+    │   ├── base.py
+    │   ├── baselines.py
+    │   ├── bertscore.py
+    │   ├── bleu.py
+    │   ├── ccp.py
+    │   ├── cp.py
+    │   ├── evaluator.py
+    │   ├── mertricsEval.py
+    │   ├── meteor.py
+    │   ├── metrics_base.py
+    │   ├── normalizer.py
+    │   ├── preprocessing.py
+    │   ├── rouge.py
+    │   ├── tokenf1.py
+    │   └── utils.py
+    ├── PaperQA
+    │   ├── readme.MD
+    │   ├── requirements.txt
+    │   └── scripts
+    │       ├── config.py
+    │       ├── inference.py
+    │       ├── model.py
+    │       └── utils.py
+    ├── README.md
+    └── ToneJudge
+        ├── __init__.py
+        ├── api_client.py
+        ├── config.py
+        ├── primitive.py
+        ├── qnaPairSelector.py
+        ├── readability.py
+        ├── scholarscore.py
+        ├── tone_judge.py
+        ├── tone_prompt_builder.py
+        ├── tone_scorer.py
+        ├── tone_transformer.py
+        └── tones.txt
+
+28 directories, 143 files
