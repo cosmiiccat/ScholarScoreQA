@@ -55,8 +55,7 @@ Long scholarly documents present challenges for QA:
 
 ---
 
-📘 **Repo Structure (Auto-updated)**  
-See **REPO_TREE.txt** in the root directory.
+📘 **Repo Structure (Auto-updated):** [View REPO_TREE.txt](./REPO_TREE.txt)
 
 
 ## 📖 Citation
