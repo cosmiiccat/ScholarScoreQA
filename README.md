@@ -78,7 +78,7 @@ In Proceedings of the ACM/IEEE Joint Conference on Digital Libraries (JCDL), 202
 | **Preetam Pati**       | Indian Institute of Information Technology Kalyani, India                      | preetam6teen@gmail.com             | [cosmiiccat](https://github.com/cosmiiccat) |
 | **Sayan De**           | Indian Institute of Information Technology Kalyani, India<br>Dr. B. C. Roy Engineering College, Durgapur, India | sayan_jrf22@iiitkalyani.ac.in      | [tec4tric](https://github.com/tec4tric) |
 | **Saurabh Tiwari**     | Indian Institute of Information Technology Kalyani, India                      | smplrsaurabh30@gmail.com           | [admin1-saurabh](https://github.com/admin1-saurabh) |
-| **Imon Mukherjee**     | Indian Institute of Information Technology Kalyani, India                      | imon@iiitkalyani.ac.in             | [imoniiitkalyani](https://github.com/imon) |
+| **Imon Mukherjee**     | Indian Institute of Information Technology Kalyani, India                      | imon@iiitkalyani.ac.in             | [imoniiitkalyani](https://github.com/imoniiitkalyani) |
 | **Debarshi Kumar Sanyal** | Indian Association for the Cultivation of Science (IACS), Jadavpur, India   | debarshi.sanyal@iacs.res.in        | [dksanyal](https://github.com/dksanyal) |
 
 
