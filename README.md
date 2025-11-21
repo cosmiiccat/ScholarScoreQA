@@ -81,3 +81,16 @@ In Proceedings of the ACM/IEEE Joint Conference on Digital Libraries (JCDL), 202
 | **Debarshi Kumar Sanyal** | Indian Association for the Cultivation of Science (IACS), Jadavpur, India   | debarshi.sanyal@iacs.res.in        | [dksanyal](https://github.com/dksanyal) |
 
 
+
+## 🙏 Acknowledgements
+
+This work is partially supported by the ANRF grant CRG/2021/000803 for the project “Extraction, Organization and Query of Scholarly Information”. We thank our institutions and collaborators for their invaluable support.
+
+---
+
+## 💡 Feedback & Support
+
+If you encounter any issues, have suggestions, or want to contribute, please [open an issue](https://github.com/cosmiiccat/ScholarScoreQA/issues) or reach out to the development team directly. We welcome feedback and collaboration!
+
+---
+
