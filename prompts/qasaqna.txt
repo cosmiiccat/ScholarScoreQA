@@ -1,0 +1,50 @@
+SYSTEM INSTRUCTION:
+«You are a domain-expert scientific annotator. Follow the JSON schema and the symbol conventions exactly. Do not add any fields beyond the schema. Be concise and base answers only on the provided CONTEXT.»
+
+SEPARATORS:
+###INSTRUCTION###
+"""Use the block below for context and question. Do not include anything else outside the JSON output block."""
+###CONTEXT###
+⟨CONTEXT_PARAGRAPHS⟩
+###QUESTION###
+{{QUESTION_TEXT}}
+
+OUTPUT FORMAT (MUST BE STRICT JSON):
+Return exactly one JSON object matching this schema (no extra text):
+
+{
+  "unanswerable": <boolean>,                       # true if not answerable, otherwise false
+  "question_trigger_sentence": "«...»",            # verbatim single sentence from ⟨CONTEXT_PARAGRAPHS⟩
+  "evidential_info": ["⟦paragraph_1⟧","⟦paragraph_2⟧",...],  # list of full paragraphs (strings) from context
+  "composition": "〈One-sentence concise synthesis〉",   # concise answer summary (1-3 sentences)
+  "answer_type": "Shallow Question|Testing Question|Deep/Complex Question"  # exactly one
+}
+
+CONSTRAINTS (enforce these strictly):
+1. If the answer is not present in ⟨CONTEXT_PARAGRAPHS⟩ then:
+   - set "unanswerable": true
+   - set all other fields to null or empty (question_trigger_sentence="", evidential_info=[], composition="", answer_type="")
+2. If the answer is present:
+   - set "unanswerable": false
+   - "question_trigger_sentence" must be one exact sentence copied verbatim from the context (wrap it in «»).
+   - "evidential_info" must contain one or more full paragraphs from ⟨CONTEXT_PARAGRAPHS⟩ that directly support the composition; preserve paragraph text exactly (wrap each in ⟦ ⟧).
+   - "composition" must not introduce new facts beyond the evidential_info.
+   - "answer_type" must be exactly one of the three allowed strings.
+3. Use triple quotes """ to delimit long context blocks and preserve line breaks if needed.
+4. Do not output explanations, commentary, or extra keys — output only the single JSON object.
+
+EXAMPLE (for reference only — not part of output):
+Input (abbreviated):
+⟨CONTEXT_PARAGRAPHS⟩ = """The u-net architecture achieves very good performance... We provide the full Caffe-based implementation..."""
+{{QUESTION_TEXT}} = "Can we use U-Net for self-driving car scene segmentation?"
+
+Required JSON output: (example)
+{
+  "unanswerable": false,
+  "question_trigger_sentence": "The u-net architecture achieves very good performance on very different biomedical segmentation applications.",
+  "evidential_info": ["The u-net architecture achieves very good performance on very different biomedical segmentation applications. Thanks to data augmentation with elastic deformations, it only needs very few annotated images and has a very reasonable training time of only 10 hours on a NVidia Titan GPU (6 GB)."],
+  "composition": "U-Net has proven effective on diverse segmentation tasks and, given its sample-efficiency and available implementations, it is plausible to adapt it for scene segmentation in self-driving contexts, but the context does not discuss real-time constraints or driving-specific datasets.",
+  "answer_type": "Testing Question"
+}
+
+END OF PROMPT
