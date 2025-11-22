@@ -258,7 +258,85 @@
 
 
 <h1 id="welcome-to-scholarscoreqa-docs">Welcome to ScholarScoreQA Docs</h1>
-<p>This is the documentation site generated using <strong>MkDocs</strong> + <strong>Material Theme</strong>.</p>
+<h1 id="scholarscoreqa">ScholarScoreQA</h1>
+<h2 id="reliable-scholarly-question-answering">Reliable Scholarly Question Answering</h2>
+<p>A <strong>retrieval-augmented scholarly question-answering system</strong> designed for long research articles. ScholarScoreQA integrates:</p>
+<ul>
+<li><strong>K-Span Select</strong> — a span-level retrieval mechanism that filters only the most relevant evidence.</li>
+<li><strong>Multi-dimensional evaluation</strong> using a <strong>Language Judge</strong>, <strong>Tone Judge</strong>, and a unified metric called <strong>ScholarScore</strong>.</li>
+<li><strong>Multiple prompting strategies</strong> (Zero-shot, CoT, Few-shot, Meta-prompting) to generate diverse answer candidates.</li>
+</ul>
+<p>This repository accompanies the paper:</p>
+<blockquote>
+<p><strong>K-Span Select and Multi-Dimensional Judging for Reliable Scholarly Question Answering</strong>
+<em>Preetam Pati, Sayan De, Saurabh Tiwari, Dr. Imon Mukherjee, Dr. Debarshi Kumar Sanyal</em>
+<em>IIIT Kalyani &amp; IACS Kolkata</em></p>
+</blockquote>
+<hr />
+<h2 id="overview">🚀 Overview</h2>
+<p>Long scholarly documents present challenges for QA:</p>
+<ul>
+<li>Evidence is often <strong>scattered</strong> across sections.</li>
+<li>Retrieval systems can fetch <strong>irrelevant text</strong>, confusing LLMs.</li>
+<li>LLM-generated answers may be <strong>fluent but hallucinated</strong>.</li>
+</ul>
+<p><strong>ScholarScoreQA</strong> addresses this through:</p>
+<ol>
+<li><strong>Span-level Context Engineering</strong> via K-Span Select.</li>
+<li><strong>Diverse LLM prompting</strong> to generate candidate answers.</li>
+<li><strong>Two independent judge modules</strong> to ensure factual and stylistic reliability.</li>
+<li><strong>ScholarScore</strong>, a harmonic metric to pick the best final answer.</li>
+</ol>
+<hr />
+<h2 id="development-team">👨‍💻 Development Team</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Affiliation(s)</th>
+<th>Email</th>
+<th>GitHub</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Preetam Pati</strong></td>
+<td>Indian Institute of Information Technology Kalyani, India</td>
+<td>preetam6teen@gmail.com</td>
+<td><a href="https://github.com/cosmiiccat">cosmiiccat</a></td>
+</tr>
+<tr>
+<td><strong>Sayan De</strong></td>
+<td>Indian Institute of Information Technology Kalyani, India<br>Dr. B. C. Roy Engineering College, Durgapur, India</td>
+<td>sayan_jrf22@iiitkalyani.ac.in</td>
+<td><a href="https://github.com/tec4tric">tec4tric</a></td>
+</tr>
+<tr>
+<td><strong>Saurabh Tiwari</strong></td>
+<td>Indian Institute of Information Technology Kalyani, India</td>
+<td>smplrsaurabh30@gmail.com</td>
+<td><a href="https://github.com/admin1-saurabh">admin1-saurabh</a></td>
+</tr>
+<tr>
+<td><strong>Imon Mukherjee</strong></td>
+<td>Indian Institute of Information Technology Kalyani, India</td>
+<td>imon@iiitkalyani.ac.in</td>
+<td><a href="https://github.com/imoniiitkalyani">imoniiitkalyani</a></td>
+</tr>
+<tr>
+<td><strong>Debarshi Kumar Sanyal</strong></td>
+<td>Indian Association for the Cultivation of Science (IACS), Jadavpur, India</td>
+<td>debarshi.sanyal@iacs.res.in</td>
+<td><a href="https://github.com/dksanyal">dksanyal</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="acknowledgements">🙏 Acknowledgements</h2>
+<p>This work is partially supported by the ANRF grant CRG/2021/000803 for the project “Extraction, Organization and Query of Scholarly Information”. We thank our institutions and collaborators for their invaluable support.</p>
+<hr />
+<h2 id="feedback-support">💡 Feedback &amp; Support</h2>
+<p>If you encounter any issues, have suggestions, or want to contribute, please <a href="https://github.com/cosmiiccat/ScholarScoreQA/issues">open an issue</a> or reach out to the development team directly. We welcome feedback and collaboration!</p>
+<hr />
 
 
 
